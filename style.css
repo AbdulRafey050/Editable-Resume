@@ -1,0 +1,244 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #e3f2fd;
+    color: #2c3e50;
+}
+
+h1 {
+    text-align: center;
+    color: #42a5f5;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+h1:hover {
+    color: #1e88e5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-top: 5px solid #42a5f5;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+form:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    background-color: #f1f8e9;
+}
+
+fieldset {
+    border: 2px solid #8bc34a;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+fieldset#personal-info {
+    background-color: #ffecb3;
+    border-color: #42a5f5;
+}
+
+fieldset#personal-info:hover {
+    background-color: #fff8e1;
+}
+
+fieldset#education {
+    background-color: #d1c4e9;
+    border-color: #7e57c2;
+}
+
+fieldset#education:hover {
+    background-color: #ede7f6;
+}
+
+fieldset#experience {
+    background-color: #b2ebf2;
+    border-color: #00acc1;
+}
+
+fieldset#experience:hover {
+    background-color: #e0f7fa;
+}
+
+fieldset#skill {
+    background-color: #f8bbd0;
+    border-color: #ec407a;
+}
+
+fieldset#skill:hover {
+    background-color: #fce4ec;
+}
+
+legend {
+    font-weight: 700;
+    color: #8bc34a;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #42a5f5;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1.1rem;
+    margin-top: 20px;
+    display: block;
+    color: #2c3e50;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+
+textarea {
+    width: 95%;
+    padding: 12px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: 2px solid #90a4ae;
+    background-color: #e3f2fd;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #42a5f5;
+    outline: none;
+    box-shadow: 0 0 8px rgba(66, 165, 245, 0.3);
+}
+
+input:hover,
+textarea:hover {
+    background-color: #ffffff;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #42a5f5;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #1e88e5;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#resumeOutput {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    border: 2px solid #42a5f5;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    color: #2c3e50;
+}
+
+#resumeOutput h2 {
+    text-align: center;
+    color: #42a5f5;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+#resumeOutput h2:hover {
+    color: #1e88e5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#resumeOutput h3 {
+    color: #00acc1;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #90a4ae;
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+#resumeOutput h3::before {
+    content: "●"; 
+    color: #42a5f5; 
+    margin-right: 8px; 
+    font-size: 1.3rem; 
+}
+
+#resumeOutput p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    line-height: 1.8;
+    color: #2c3e50;
+}
+
+#resumeOutput ul {
+    padding-left: 20px;
+}
+
+#resumeOutput ul li {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #555;
+    position: relative;
+    padding-left: 20px;
+}
+
+#resumeOutput ul li::before {
+    content: "•";
+    color: #42a5f5;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    #resumeOutput {
+        padding: 20px;
+    }
+
+    #resumeOutput h2 {
+        font-size: 1.6rem;
+    }
+
+    #resumeOutput h3 {
+        font-size: 1.2rem;
+    }
+
+    #resumeOutput p {
+        font-size: 1rem;
+    }
+}
